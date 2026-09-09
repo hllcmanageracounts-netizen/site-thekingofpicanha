@@ -9,7 +9,7 @@ const montserrat = Montserrat({ subsets: ['latin'], variable: '--font-montserrat
 export const metadata: Metadata = {
   title: 'The King of Picanha | Brazilian Steakhouse in Philadelphia, PA',
   description: 'Experience authentic Brazilian steakhouse flavors at The King of Picanha in Philadelphia, PA. Enjoy picanha, Brazilian classics and grilled specialties.',
-  keywords: ['Brazilian Steakhouse Philadelphia', 'Brazilian Restaurant Philadelphia', 'Picanha Philadelphia', 'Churrasco Philadelphia'],
+  keywords: ['Brazilian Steakhouse Philadelphia', 'Steakhouse & Grill Philadelphia', 'Brazilian Restaurant Philadelphia', 'Picanha Philadelphia', 'Premium Brazilian Cuts'],
   openGraph: { title: 'The King of Picanha', description: 'Authentic Brazilian steakhouse in Philadelphia.', type: 'website' },
 }
 
