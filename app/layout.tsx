@@ -1,6 +1,7 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import { Cinzel, Montserrat } from 'next/font/google'
+import { LanguageProvider } from '@/lib/i18n'
 import './globals.css'
 
 const cinzel = Cinzel({ subsets: ['latin'], variable: '--font-cinzel' })
@@ -16,5 +17,5 @@ export const metadata: Metadata = {
 export const viewport: Viewport = { colorScheme: 'light', themeColor: '#171211' }
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en" className={`${cinzel.variable} ${montserrat.variable} light bg-background`}><body className="antialiased">{children}{process.env.NODE_ENV === 'production' && <Analytics />}</body></html>
+  return <html lang="en" className={`${cinzel.variable} ${montserrat.variable} light bg-background`}><body className="antialiased"><LanguageProvider>{children}</LanguageProvider>{process.env.NODE_ENV === 'production' && <Analytics />}</body></html>
 }
